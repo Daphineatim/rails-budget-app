@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
     end
 
     def show
-        @category = Expense.all.where(category_id: @category.id))     
+        @category = Expense.all.where(category_id: @category.id)   
     end
 
     def new

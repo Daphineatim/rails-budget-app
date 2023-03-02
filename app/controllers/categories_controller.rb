@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_category, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: [:public]
 
   def index
@@ -24,7 +24,7 @@ class CategoriesController < ApplicationController
       if @category.save
         format.html { redirect_to category_url(@category), notice: 'Category was successfully created.' }
       else
-        format.html {render :new, status: unprocessable_entity }
+        format.html { render :new, status: unprocessable_entity }
       end
     end
   end

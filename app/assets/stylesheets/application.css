@@ -25,16 +25,16 @@
   --secondary-color: #5fb523;
   --text-color: #434b54;
 }
-  
+
 @font-face {
   font-family: 'Montserrat', sans-serif;
   src: url('Proxima-Nova.otf');
 }
-  
+
 body {
   background-color: #f5f5f5;
 }
-  
+
 h5 {
   font-family: "proxima-nova-bold", sans-serif;
   letter-spacing: 1px;
@@ -43,7 +43,7 @@ h5 {
 p {
   font-family: "proxima-nova-light", sans-serif;
 }
-  
+
 li {
   list-style-type: none;
 }
@@ -61,12 +61,12 @@ a {
   height: 100vh;
   background-color: #f0f2f1;
 }
-  
+
 .header {
   background-image: linear-gradient(to left, #2c67ab, #3a79c1);
   height: 10vh;
 }
-  
+
 .bg-none {
   background: none;
   border: none;

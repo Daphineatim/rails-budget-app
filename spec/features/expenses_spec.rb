@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Expenses index page', type: :feature do
   before(:each) do
-    @user = User.create(id:1, name: 'Hope', email: 'daphine10@gmail.com', password: 'dylankyle')
+    @user = User.create(id: 1, name: 'Hope', email: 'daphine10@gmail.com', password: 'dylankyle')
     @category = Category.create(name: 'test', icon: 'https://cdn-icons-png.flaticon.com/512/891/891462.png',
                                 user_id: @user.id)
     @expense = Expense.create(name: 'expense', amount: 10, user_id: @user.id, category_id: @category.id)

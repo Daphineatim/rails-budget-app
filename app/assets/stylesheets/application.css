@@ -66,6 +66,7 @@ a {
   background-image: linear-gradient(to left, #2c67ab, #3a79c1);
   height: 10vh;
   display: flex;
+  justify-content: space-between;
 }
 
 .bg-none {
@@ -109,6 +110,10 @@ footer {
   width: 60px;
 }
 
+.p-container {
+  padding-bottom: 75px;
+}
+
 .notice {
   text-align: center;
   padding: 10px;
@@ -119,4 +124,15 @@ footer {
 .row {
   display: grid;
   grid-template-columns: 1fr 11fr;
+}
+
+.footer-bttn {
+  width: 100%;
+  padding: 35px 0;
+  background-color: #5fb523;
+}
+
+.footer-bttn a {
+  border: 1px solid #fff;
+  padding: 10px 30%;
 }

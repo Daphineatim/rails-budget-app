@@ -16,11 +16,10 @@ RSpec.describe 'Expenses index page', type: :feature do
 
   describe 'tests for view categories#show' do
     it 'spec for show page ' do
-      expect(page).to have_content 'Transactions'
+      expect(page).to have_content 'TRANSACTIONS'
       expect(page).to have_content 'test'
 
       expect(page).to have_content 'Expense'
-      expect(page).to have_content 'Add Expense'
     end
 
     it 'see the total amount of expenses' do

@@ -2,8 +2,11 @@
     <div>
         <%= link_to image_tag("https://img.icons8.com/ultraviolet/344/long-arrow-left.png"), root_path, class: "back_btn" %>
     </div>
-    <h4 class="text-white">Add a category</h4>      
-</div>
+        <h4 class="text-white">Add a category</h4>
+        <% if user_signed_in? %> 
+            <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "btn main-color" %>
+        <% end %>
+    </div>
 
     <%= form_with(model: category) do |f| %>
         

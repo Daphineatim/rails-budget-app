@@ -67,6 +67,10 @@ a {
   height: 10vh;
 }
 
+.text-white {
+  align-items: center;
+}
+
 .bg-none {
   background: none;
   border: none;

@@ -65,10 +65,7 @@ a {
 .header {
   background-image: linear-gradient(to left, #2c67ab, #3a79c1);
   height: 10vh;
-}
-
-.text-white {
-  align-items: center;
+  display: flex;
 }
 
 .bg-none {

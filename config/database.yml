@@ -88,6 +88,4 @@ test:
 #
 production:
   <<: *default
-  database: rails_budget_app_production
-  username: postgres
-  password: dylankyle
+  url: <%= ENV['DATABASE_URL'] %>
